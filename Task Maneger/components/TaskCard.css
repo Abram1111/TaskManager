@@ -1,0 +1,122 @@
+
+  .task-card.completed {
+    background-color: #3ad43a;
+  }
+  
+  .task-card .task-details h3 {
+    text-decoration: none;
+  }
+  
+  .task-card.completed .task-details h3 {
+    text-decoration: line-through;
+  }
+  
+  .task-card .task-details p {
+    margin: 0;
+  }
+  
+  .task-card .task-buttons {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .task-card .task-buttons button {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  /* TaskCard styling */
+.task-card {
+    min-width: 30%;
+    max-width: 50%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures buttons are at the bottom */
+    padding: 10px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    margin-left:auto ;
+    margin-right:auto ;
+    min-height: 150px; /* Minimum height to avoid too small cards */
+  }
+  
+  .task-details {
+    flex-grow: 1;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  h3 {
+    font-size: 1.2em;
+    margin: 0;
+    word-wrap: break-word; /* Allow title to wrap to the next line */
+  }
+  
+  p {
+    font-size: 1em;
+    color: #555;
+    margin-top: 5px;
+    word-wrap: break-word; /* Ensure the description wraps to the next line */
+    white-space: normal; /* Allow text to break and wrap naturally */
+    overflow: hidden; /* Prevent overflowing content */
+  }
+  
+  .task-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+  
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.3s;
+  }
+  
+  button i {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  button:hover i {
+    color: #007BFF;
+  }
+  
+  .complete-button i {
+    color: #2C3E50;
+  }
+  
+  .complete-button.completed i {
+    color: #2C3E50;
+  }
+  .delete-button.completed i {
+    color: #2C3E50;  }
+  .edit-button.completed i {
+    color: #2C3E50;
+  }
+  .edit-button i {
+    color: #2C3E50;
+  }
+  
+  .delete-button i {
+    color: #2C3E50;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  @media (max-width: 768px) {
+    .task-card {
+      max-width: 90%; /* Ensure a consistent width that adapts on mobile */
+      width: 90%;
+      min-width: 90%; /* Make all cards the same size on smaller screens */
+    }
+  }
