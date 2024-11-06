@@ -6,7 +6,7 @@ This is a Task Manager application built using **React** and **Next.js**. The ap
 
 - **Add New Tasks**: Users can create new tasks with titles and descriptions.
   
-  ![Add New Task](public/images/add.png) 
+  ![Add New Task](TaskManeger/public/images/add.png) 
 
 - **Mark Tasks as Completed**: Users can mark tasks as completed, which applies a strikethrough to indicate completion.
   
